@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "915785927388",
+    "project_id": "ml-app-5f335",
+    "storage_bucket": "ml-app-5f335.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915785927388:android:78444f8f0a5f9d4618c219",
+        "android_client_info": {
+          "package_name": "com.example.flutter_map"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYOea7XynI24gb9fZSOR_XHDzTVzSIj6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915785927388:android:60e30df0bc417c4318c219",
+        "android_client_info": {
+          "package_name": "com.example.ml_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYOea7XynI24gb9fZSOR_XHDzTVzSIj6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

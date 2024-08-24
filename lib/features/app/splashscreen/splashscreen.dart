@@ -1,15 +1,39 @@
 import 'package:flutter/material.dart';
 
-class Splashscreen extends StatefulWidget {
-  const Splashscreen({super.key});
+
+class SplashScreen extends StatefulWidget {
+  final Widget? child;
+  const SplashScreen({super.key, this.child});
 
   @override
-  State<Splashscreen> createState() => _SplashscreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashscreenState extends State<Splashscreen> {
+class _SplashScreenState extends State<SplashScreen> {
+
+@override
+  void initState() {
+    Future.delayed(
+      Duration(seconds: 3),(){
+        Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => widget.child!), (route) => false);
+    }
+    );
+    super.initState();
+  }
+
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Text(
+          "Welcome To Flutter Firebase",
+          style: TextStyle(
+            color: Colors.blue,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
   }
 }

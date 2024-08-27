@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.4.2" // Ensure this matches your Flutter project's requirements
+        classpath "com.google.gms:google-services:4.4.2" // Corrected classpath for Google Services
+    }
+}
+
 allprojects {
     repositories {
         google()
@@ -5,18 +16,16 @@ allprojects {
     }
 }
 
-dependencies {
-    classpath "com.google.gms.google-services4.4.2" 
-}
-
 rootProject.buildDir = "../build"
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
     project.evaluationDependsOn(":app")
 }
 
+// Remove or comment out this block to avoid task conflict
+/*
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+*/

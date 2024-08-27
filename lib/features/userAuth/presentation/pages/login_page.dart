@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 10,),
               GestureDetector(
                 onTap: () {
-                  _signInWithGoogle();
+                  // _signInWithGoogle();
 
                 },
                 child: Container(
@@ -182,33 +182,32 @@ class _LoginPageState extends State<LoginPage> {
   }
 
 
-  _signInWithGoogle()async{
+//   _signInWithGoogle()async{
 
-    final GoogleSignIn _googleSignIn = GoogleSignIn();
+//     final GoogleSignIn _googleSignIn = GoogleSignIn();
 
-    try {
+//     try {
 
-      final GoogleSignInAccount? googleSignInAccount = await _googleSignIn.signIn();
+//       final GoogleSignInAccount? googleSignInAccount = await _googleSignIn.signIn();
 
-      if(googleSignInAccount != null ){
-        final GoogleSignInAuthentication googleSignInAuthentication = await
-        googleSignInAccount.authentication;
+//       if(googleSignInAccount != null ){
+//         final GoogleSignInAuthentication googleSignInAuthentication = await
+//         googleSignInAccount.authentication;
 
-        final AuthCredential credential = GoogleAuthProvider.credential(
-          idToken: googleSignInAuthentication.idToken,
-          accessToken: googleSignInAuthentication.accessToken,
-        );
+//         final AuthCredential credential = GoogleAuthProvider.credential(
+//           idToken: googleSignInAuthentication.idToken,
+//           accessToken: googleSignInAuthentication.accessToken,
+//         );
 
-        await _firebaseAuth.signInWithCredential(credential);
-        Navigator.pushNamed(context, "/home");
-      }
+//         await _firebaseAuth.signInWithCredential(credential);
+//         Navigator.pushNamed(context, "/home");
+//       }
 
-    }catch(e) {
-showToast(message: "some error occured $e");
-    }
+//     }catch(e) {
+// showToast(message: "some error occured $e");
+//     }
 
-
-  }
+//   }
 
 
 }

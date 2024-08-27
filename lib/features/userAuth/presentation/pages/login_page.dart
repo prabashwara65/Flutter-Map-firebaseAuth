@@ -6,7 +6,7 @@ import 'package:flutter_map/features/userAuth/presentation/pages/sign_up_page.da
 import 'package:flutter_map/features/userAuth/presentation/widgets/form_container_widget.dart';
 import 'package:flutter_map/global/common/toast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
 
 import '../../firebase_auth_implementation/firebase_auth_services.dart';
 

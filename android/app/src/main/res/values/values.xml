@@ -1,0 +1,4 @@
+<resources>
+    <string name="default_web_client_id" translatable="false" value="YOUR_DEFAULT_WEB_CLIENT_ID"/>
+    <!-- Add other Firebase related strings here -->
+</resources>

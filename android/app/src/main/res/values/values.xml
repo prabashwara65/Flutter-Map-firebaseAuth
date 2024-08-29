@@ -1,4 +1,9 @@
+
+
+
 <resources>
-    <string name="default_web_client_id" translatable="false" value="YOUR_DEFAULT_WEB_CLIENT_ID"/>
-    <!-- Add other Firebase related strings here -->
+    <!-- Replace with your Firebase project's information -->
+    <string name="google_app_id" translatable="false">1:1234567890:android:abcdef12345</string>
+    <string name="google_api_key" translatable="false">AIzaSyDYOea7XynI24gb9fZSOR_XHDzTVzSIj6w</string>
+    <!-- Add any other Firebase-related configurations here -->
 </resources>

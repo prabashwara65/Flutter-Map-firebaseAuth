@@ -31,6 +31,7 @@ class _MapPageState extends State<MapPage> {
   }
 
   @override
+  //map view page
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Google Map Example')),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter_map/features/userAuth/presentation/pages/home_page.dart';
+// import 'package:flutter_map/features/userAuth/presentation/pages/home_page.dart';
+import 'package:flutter_map/screens/map_page.dart';
 
 //platform exception has been occured.it must be fix
 //firebase dosen't work properly 
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //Start initial page
-      home: HomePage(),
+      //home: HomePage(),
+      home: MapPage(),
     );
   }
 }

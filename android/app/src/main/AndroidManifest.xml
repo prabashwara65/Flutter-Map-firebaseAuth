@@ -39,8 +39,6 @@
             android:value="AIzaSyBfZ8hxegR6OHUeEGlSCZ2LHGHWNX6sOng"/>
 
             
-
-            <!-- AIzaSyCELkKzdcZn5md62y5vp3gy0_BmjbmipqA -->
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
